@@ -1,0 +1,11 @@
+defaults: &defaults
+  SECRET_KEY: 8e09e5847f4f095e3fb4b838ad09092cd57089764c0367cef8ef4a05c610bf0dbb9ae4c174c637e8fac207c1d864426e7f1fea8ad69f1be559a163af0567c0e8
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
