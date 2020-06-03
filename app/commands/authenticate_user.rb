@@ -13,9 +13,7 @@ class AuthenticateUser
 
   # Returns a jwt token if the user method  is successful
   def call
-    puts "User Here"
-    puts user.id
-    puts "User above"
+
     JsonWebToken.encode(host_id: user.id) if user
   end
 

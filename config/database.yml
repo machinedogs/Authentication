@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test
 
+
 production:
-  <<: *default
-  database: db/production
+  adapter: postgresql
+  encoding: utf8
+  database: APP_CONFIG['DB_ID']
+  username: APP_CONFIG['DB_USER']
+  password: APP_CONFIG['DB_PASSWORD']

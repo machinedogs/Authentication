@@ -1,0 +1,123 @@
+I, [2020-06-02T22:11:41.021690 #56328]  INFO -- : [3bc4f636-ea0c-4dba-9a94-5771fc123e3b] Started POST "/api/v1/events" for 127.0.0.1 at 2020-06-02 22:11:41 -0400
+F, [2020-06-02T22:11:41.022274 #56328] FATAL -- : [3bc4f636-ea0c-4dba-9a94-5771fc123e3b]   
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] ActionController::RoutingError (No route matches [POST] "/api/v1/events"):
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b]   
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+[3bc4f636-ea0c-4dba-9a94-5771fc123e3b] puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+I, [2020-06-02T22:11:45.327839 #56328]  INFO -- : [7e870a00-ef32-4eea-a868-d31de106f494] Started GET "/api/v1/events" for 127.0.0.1 at 2020-06-02 22:11:45 -0400
+F, [2020-06-02T22:11:45.328365 #56328] FATAL -- : [7e870a00-ef32-4eea-a868-d31de106f494]   
+[7e870a00-ef32-4eea-a868-d31de106f494] ActionController::RoutingError (No route matches [GET] "/api/v1/events"):
+[7e870a00-ef32-4eea-a868-d31de106f494]   
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+[7e870a00-ef32-4eea-a868-d31de106f494] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+[7e870a00-ef32-4eea-a868-d31de106f494] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[7e870a00-ef32-4eea-a868-d31de106f494] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[7e870a00-ef32-4eea-a868-d31de106f494] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[7e870a00-ef32-4eea-a868-d31de106f494] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+[7e870a00-ef32-4eea-a868-d31de106f494] puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+[7e870a00-ef32-4eea-a868-d31de106f494] puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+[7e870a00-ef32-4eea-a868-d31de106f494] puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+[7e870a00-ef32-4eea-a868-d31de106f494] puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+I, [2020-06-02T22:12:47.677835 #56328]  INFO -- : [c88676b0-236b-4dec-bc50-94b26fb3ccf0] Started POST "/hosts" for 127.0.0.1 at 2020-06-02 22:12:47 -0400
+I, [2020-06-02T22:12:47.698900 #56328]  INFO -- : [c88676b0-236b-4dec-bc50-94b26fb3ccf0] Processing by Host::RegistrationsController#create as */*
+I, [2020-06-02T22:12:47.699036 #56328]  INFO -- : [c88676b0-236b-4dec-bc50-94b26fb3ccf0]   Parameters: {"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+I, [2020-06-02T22:12:47.725631 #56328]  INFO -- : [c88676b0-236b-4dec-bc50-94b26fb3ccf0] Completed 500 Internal Server Error in 26ms (Allocations: 1140)
+F, [2020-06-02T22:12:47.726628 #56328] FATAL -- : [c88676b0-236b-4dec-bc50-94b26fb3ccf0]   
+[c88676b0-236b-4dec-bc50-94b26fb3ccf0] PG::ConnectionBad (FATAL:  role "APP_CONFIG['DB_USER']" does not exist
+):
+[c88676b0-236b-4dec-bc50-94b26fb3ccf0]   
+[c88676b0-236b-4dec-bc50-94b26fb3ccf0] app/controllers/Host/registrations_controller.rb:15:in `create'
+I, [2020-06-02T22:13:40.717187 #56328]  INFO -- : [c87e08a6-9e61-4287-b0df-afd03f366e73] Started POST "/hosts" for 127.0.0.1 at 2020-06-02 22:13:40 -0400
+I, [2020-06-02T22:13:40.718258 #56328]  INFO -- : [c87e08a6-9e61-4287-b0df-afd03f366e73] Processing by Host::RegistrationsController#create as */*
+I, [2020-06-02T22:13:40.718377 #56328]  INFO -- : [c87e08a6-9e61-4287-b0df-afd03f366e73]   Parameters: {"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+I, [2020-06-02T22:13:40.724613 #56328]  INFO -- : [c87e08a6-9e61-4287-b0df-afd03f366e73] Completed 500 Internal Server Error in 6ms (Allocations: 520)
+F, [2020-06-02T22:13:40.725536 #56328] FATAL -- : [c87e08a6-9e61-4287-b0df-afd03f366e73]   
+[c87e08a6-9e61-4287-b0df-afd03f366e73] PG::ConnectionBad (FATAL:  role "APP_CONFIG['DB_USER']" does not exist
+):
+[c87e08a6-9e61-4287-b0df-afd03f366e73]   
+[c87e08a6-9e61-4287-b0df-afd03f366e73] app/controllers/Host/registrations_controller.rb:15:in `create'
+I, [2020-06-02T22:15:20.508543 #57183]  INFO -- : [fd81265e-01ed-4ff3-bc0e-a79406d7dca5] Started POST "/hosts/" for 127.0.0.1 at 2020-06-02 22:15:20 -0400
+I, [2020-06-02T22:15:20.517563 #57183]  INFO -- : [fd81265e-01ed-4ff3-bc0e-a79406d7dca5] Processing by Host::RegistrationsController#create as */*
+I, [2020-06-02T22:15:20.517658 #57183]  INFO -- : [fd81265e-01ed-4ff3-bc0e-a79406d7dca5]   Parameters: {"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+I, [2020-06-02T22:15:20.532372 #57183]  INFO -- : [fd81265e-01ed-4ff3-bc0e-a79406d7dca5] Completed 500 Internal Server Error in 15ms (Allocations: 901)
+F, [2020-06-02T22:15:20.533203 #57183] FATAL -- : [fd81265e-01ed-4ff3-bc0e-a79406d7dca5]   
+[fd81265e-01ed-4ff3-bc0e-a79406d7dca5] PG::ConnectionBad (FATAL:  role "APP_CONFIG['DB_USER']" does not exist
+):
+[fd81265e-01ed-4ff3-bc0e-a79406d7dca5]   
+[fd81265e-01ed-4ff3-bc0e-a79406d7dca5] app/controllers/Host/registrations_controller.rb:15:in `create'
+I, [2020-06-02T22:15:31.046556 #57183]  INFO -- : [c51ddd09-41ee-4c07-a668-958c661f5e2e] Started GET "/hosts/" for 127.0.0.1 at 2020-06-02 22:15:31 -0400
+F, [2020-06-02T22:15:31.046924 #57183] FATAL -- : [c51ddd09-41ee-4c07-a668-958c661f5e2e]   
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] ActionController::RoutingError (No route matches [GET] "/hosts"):
+[c51ddd09-41ee-4c07-a668-958c661f5e2e]   
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+[c51ddd09-41ee-4c07-a668-958c661f5e2e] puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+I, [2020-06-02T22:15:36.334358 #57183]  INFO -- : [28134c61-ceda-434d-bab2-78a62d1d1cda] Started POST "/hosts" for 127.0.0.1 at 2020-06-02 22:15:36 -0400
+I, [2020-06-02T22:15:36.335037 #57183]  INFO -- : [28134c61-ceda-434d-bab2-78a62d1d1cda] Processing by Host::RegistrationsController#create as */*
+I, [2020-06-02T22:15:36.335104 #57183]  INFO -- : [28134c61-ceda-434d-bab2-78a62d1d1cda]   Parameters: {"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+I, [2020-06-02T22:15:36.338744 #57183]  INFO -- : [28134c61-ceda-434d-bab2-78a62d1d1cda] Completed 500 Internal Server Error in 4ms (Allocations: 520)
+F, [2020-06-02T22:15:36.339405 #57183] FATAL -- : [28134c61-ceda-434d-bab2-78a62d1d1cda]   
+[28134c61-ceda-434d-bab2-78a62d1d1cda] PG::ConnectionBad (FATAL:  role "APP_CONFIG['DB_USER']" does not exist
+):
+[28134c61-ceda-434d-bab2-78a62d1d1cda]   
+[28134c61-ceda-434d-bab2-78a62d1d1cda] app/controllers/Host/registrations_controller.rb:15:in `create'
+I, [2020-06-02T22:15:39.349660 #57183]  INFO -- : [eae475db-862f-4137-aa97-75a6d9f61dc0] Started POST "/hosts" for 127.0.0.1 at 2020-06-02 22:15:39 -0400
+I, [2020-06-02T22:15:39.350180 #57183]  INFO -- : [eae475db-862f-4137-aa97-75a6d9f61dc0] Processing by Host::RegistrationsController#create as */*
+I, [2020-06-02T22:15:39.350228 #57183]  INFO -- : [eae475db-862f-4137-aa97-75a6d9f61dc0]   Parameters: {"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"email"=>"fake@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+I, [2020-06-02T22:15:39.352752 #57183]  INFO -- : [eae475db-862f-4137-aa97-75a6d9f61dc0] Completed 500 Internal Server Error in 2ms (Allocations: 520)
+F, [2020-06-02T22:15:39.353138 #57183] FATAL -- : [eae475db-862f-4137-aa97-75a6d9f61dc0]   
+[eae475db-862f-4137-aa97-75a6d9f61dc0] PG::ConnectionBad (FATAL:  role "APP_CONFIG['DB_USER']" does not exist
+):
+[eae475db-862f-4137-aa97-75a6d9f61dc0]   
+[eae475db-862f-4137-aa97-75a6d9f61dc0] app/controllers/Host/registrations_controller.rb:15:in `create'

@@ -1,6 +1,16 @@
 defaults: &defaults
   SECRET_KEY: 8e09e5847f4f095e3fb4b838ad09092cd57089764c0367cef8ef4a05c610bf0dbb9ae4c174c637e8fac207c1d864426e7f1fea8ad69f1be559a163af0567c0e8
+  DB_HOST: ec2-34-232-147-86.compute-1.amazonaws.com
+  DB_ID: d7jpbh6q8h8ak4
+  DB_USER: czyteatvwnbpwi
+  DB_PORT: 5432
+  DB_PASSWORD: 1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d
+  DB_URI: postgres://czyteatvwnbpwi:1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d@ec2-34-232-147-86.compute-1.amazonaws.com:5432/d7jpbh6q8h8ak4
 
+
+
+
+  
 development:
   <<: *defaults
 
