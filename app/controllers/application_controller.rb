@@ -1,8 +1,5 @@
 # frozen_string_literal: true
-
-
 class ApplicationController < ActionController::API
-  before_action :authenticate_host!
   
   private
 
@@ -10,5 +7,4 @@ class ApplicationController < ActionController::API
   def authenticate_api
     
   end
-
 end

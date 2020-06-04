@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :hosts,
+  namespace :api do
+    namespace :v1 do
+      devise_for :hosts,
              controllers: {
-               sessions: 'host/sessions', registrations: 'host/registrations'
+               sessions: 'api/v1/host/sessions', registrations: 'api/v1/host/registrations'
              }
+      get 'refresh', to: 'refresh#index'
+    end
+  end     
 end
