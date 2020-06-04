@@ -7,7 +7,7 @@ Rails.application.routes.draw do
              controllers: {
                sessions: 'api/v1/host/sessions', registrations: 'api/v1/host/registrations'
              }
-      get 'refresh', to: 'refresh#index'
+      get 'refresh', to: 'refresh/refreshs#index'
     end
   end     
 end
