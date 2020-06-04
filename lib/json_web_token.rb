@@ -1,7 +1,4 @@
 # frozen_string_literal: true
-
-
-require 'byebug'
 module JsonWebToken
   def self.encode(payload, exp = 1.hours.from_now)
     payload[:exp] = exp.to_i
