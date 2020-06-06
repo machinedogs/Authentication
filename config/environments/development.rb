@@ -14,7 +14,20 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  #Mailer 
+  config.action_mailer.delivery_method = :smtp
+  host = 'example.com' #replace with your own url
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => "gigtracker123@gmail.com",
+    :password             => "machinedogs",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
