@@ -15,7 +15,7 @@ class Api::V1::Host::SessionsController < Devise::SessionsController
 
     if command.success?
       @host_sign_in = Host.where(email: params[:email]).first
-      render :host_sign_in, status: :ok
+      render :host_sign_in, :formats =>:json, status: :ok
     else
       render json: { error: command.errors }, status: :unauthorized
     end

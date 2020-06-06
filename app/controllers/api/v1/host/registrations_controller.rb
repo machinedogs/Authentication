@@ -13,7 +13,7 @@
       def create
         @host_sign_up = Host.create(host_params)
         if @host_sign_up.save
-          render :host_sign_up, status: :ok
+          render :host_sign_up,:formats =>:json, status: :ok
         else
           render json: {
             status: 'ERROR', message: 'Host Not Saved', data: @host_sign_up.errors
