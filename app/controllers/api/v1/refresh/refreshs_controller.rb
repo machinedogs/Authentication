@@ -8,7 +8,7 @@ class Api::V1::Refresh::RefreshsController < ApplicationController
         
         if Time.at(@refresh_tokens[:exp]) > Time.now
             #If not expired, give back new JWT token and new refresh token
-            render :refresh_tokens, status: :ok
+            render :refresh_tokens,:formats =>:json, status: :ok
         elsif @refresh_tokens[:refresh]!=true
             render json: { error: 'Token is not valid'}, status: :unauthorized
         else 
