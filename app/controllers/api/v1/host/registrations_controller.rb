@@ -13,7 +13,7 @@
       def create
         @host_sign_up = Host.create(host_params)
         if @host_sign_up.save 
-          GigMailer.new_user_email.deliver_later
+          GigMailer.with(email: params[:email]).new_user_email.deliver_later
           render :host_sign_up,:formats =>:json, status: :ok
         else
           render json: {
