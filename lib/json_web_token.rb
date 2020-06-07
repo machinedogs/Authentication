@@ -1,14 +1,14 @@
 # frozen_string_literal: true
-
-
-
 module JsonWebToken
-  def self.encode(payload, exp = 24.hours.from_now)
-    puts "Payload Here"
-    puts payload 
-    puts "Payload ^"
+  def self.encode(payload, exp = 1.hours.from_now)
     payload[:exp] = exp.to_i
-    JWT.encode(payload, secret_key)
+    encoded = {'jwt': JWT.encode(payload, secret_key), 'expires': 1.hours.from_now}
+  end
+
+  def self.refresh_encode(payload, exp = 3.months.from_now)
+    payload[:exp] = exp.to_i
+    payload[:refresh]=true
+    encoded = {'refresh_token': JWT.encode(payload, secret_key), 'expires': 3.months.from_now}
   end
 
   def self.decode(token)
