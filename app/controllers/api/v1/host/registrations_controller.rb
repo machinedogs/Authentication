@@ -1,9 +1,9 @@
 # frozen_string_literal: true
+class Api::V1::Host::RegistrationsController < Devise::RegistrationsController
+      skip_before_action :authenticate_scope!
 
-  class Api::V1::Host::RegistrationsController < Devise::RegistrationsController
-      before_action :configure_sign_up_params, only: %i[create]
-      before_action :configure_account_update_params, only: %i[update]
-
+      # before_action :configure_sign_up_params, only: %i[create]
+      # before_action :configure_account_update_params, only: %i[update]
       # GET /resource/sign_up
       def new
         super
@@ -34,7 +34,13 @@
 
       # DELETE /resource
       def destroy
-        super
+        user = AuthorizeApiRequest.call(params).result
+        if user
+          user.destroy
+          render json: {status: "User Deleted"}, status: :ok
+        else
+          render json: { error: "User Not Deleted" }, :status => 404
+        end  
       end
 
       # GET /resource/cancel
@@ -71,5 +77,5 @@
       def host_params
         params.permit(:email, :name,  :password, :password_confirmation)
       end
-  end
+end
 

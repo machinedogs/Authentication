@@ -21,6 +21,8 @@ class AuthorizeApiRequest
   def user
     @user ||= Host.find(decoded_auth_token[:host_id]) if decoded_auth_token
     @user || errors.add(:token, 'Invalid token') && nil
+    rescue ActiveRecord::RecordNotFound => e
+      return nil
   end
 
   def decoded_auth_token
@@ -28,8 +30,8 @@ class AuthorizeApiRequest
   end
 
   def http_auth_header
-    if params['auth_token'].present?
-      params['auth_token'].split(' ').last
+    if params['refresh_token'].present?
+      params['refresh_token'].split(' ').last
     else
       errors.add :token, 'Missing token'
     end
