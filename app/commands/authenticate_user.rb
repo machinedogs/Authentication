@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-
-
 class AuthenticateUser
   include JsonWebToken
   prepend SimpleCommand
@@ -22,8 +20,8 @@ class AuthenticateUser
   attr_accessor :email, :password
 
   def user
-    host = Host.find_by_email(email)
-    return host if host.valid_password?(password)
+    host = Host.find_by_email(email.downcase)
+    return host if host&.valid_password?(password)
 
     errors.add :user_authentication, 'invalid credentials'
     nil

@@ -1,6 +1,6 @@
 
 json.data do
-    json.host do 
+    json.host do
         json.name @host_sign_in.name
         json.email @host_sign_in.email
     end
