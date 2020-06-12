@@ -39,7 +39,7 @@ event_object = {
   "title": 'Partyy',
   "description": 'Come party yall',
   "date": '',
-  "type_id": '1',
+  "category": '1',
   "latitude": '39.9800',
   "longitude": '-75.1600'
 } 
@@ -49,7 +49,7 @@ event_object2 = {
   "title": 'Partyy 2',
   "description": 'Come party yall',
   "date": '',
-  "type_id": '1',
+  "category": '1',
   "latitude": '39.9800',
   "longitude": '-75.1600'
 }

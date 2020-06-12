@@ -6,10 +6,7 @@ defaults: &defaults
   DB_PORT: 5432
   DB_PASSWORD: 1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d
   DB_URI: postgres://czyteatvwnbpwi:1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d@ec2-34-232-147-86.compute-1.amazonaws.com:5432/d7jpbh6q8h8ak4
-
-
-
-
+#TODO: Not sure if this needed, could be cleaned up
   
 development:
   <<: *defaults
