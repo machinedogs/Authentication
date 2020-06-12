@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 class Api::V1::Refresh::RefreshsController < ApplicationController
+    before_action :authenticate_host!
     #Will take in refresh token and give back new auth token and refresh token
     def index 
         @refresh_tokens= JsonWebToken.decode(params[:refresh_token])
