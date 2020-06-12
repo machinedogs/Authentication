@@ -2,13 +2,14 @@
 module JsonWebToken
   def self.encode(payload, exp = 1.hours.from_now)
     payload[:exp] = exp.to_i
-    encoded = {'jwt': JWT.encode(payload, secret_key), 'expires': 1.hours.from_now}
+    payload[:refresh]=false
+    encoded = {'jwt': JWT.encode(payload, secret_key), 'expires': payload[:exp]}
   end
 
   def self.refresh_encode(payload, exp = 3.months.from_now)
     payload[:exp] = exp.to_i
     payload[:refresh]=true
-    encoded = {'refresh_token': JWT.encode(payload, secret_key), 'expires': 3.months.from_now}
+    encoded = {'refresh_token': JWT.encode(payload, secret_key), 'expires': payload[:exp]}
   end
 
   def self.decode(token)

@@ -26,7 +26,13 @@ class AuthorizeApiRequest
   end
 
   def decoded_auth_token
-    @decoded_auth_token ||= JsonWebToken.decode(http_auth_header)
+    decoded_auth_token = JsonWebToken.decode(http_auth_header)
+    #See if it decodes correctly, meaning not expired, then check if it is a refresh token or not
+    if decoded_auth_token && decoded_auth_token[:refresh]
+      return decoded_auth_token
+    else
+      return nil
+    end
   end
 
   def http_auth_header
