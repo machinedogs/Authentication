@@ -1,15 +1,13 @@
 defaults: &defaults
   SECRET_KEY: 8e09e5847f4f095e3fb4b838ad09092cd57089764c0367cef8ef4a05c610bf0dbb9ae4c174c637e8fac207c1d864426e7f1fea8ad69f1be559a163af0567c0e8
+  API_KEY: 31dd93e788c040367cb7b9bba52ff9d489dee5f05f7548b9313dd2d12c7981035b67e02abad9194d16c25ac0a88634c742301c77a3e56e2a5826d8a6216621f5
   DB_HOST: ec2-34-232-147-86.compute-1.amazonaws.com
   DB_ID: d7jpbh6q8h8ak4
   DB_USER: czyteatvwnbpwi
   DB_PORT: 5432
   DB_PASSWORD: 1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d
   DB_URI: postgres://czyteatvwnbpwi:1740be275de3cbf67c84c85aa411912e594b491431e98b83f8ceb440da23759d@ec2-34-232-147-86.compute-1.amazonaws.com:5432/d7jpbh6q8h8ak4
-
-
-
-
+#TODO: Not sure if this needed, could be cleaned up
   
 development:
   <<: *defaults
