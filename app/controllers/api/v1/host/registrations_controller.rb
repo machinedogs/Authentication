@@ -11,7 +11,9 @@ class Api::V1::Host::RegistrationsController < Devise::RegistrationsController
 
       # POST /resource
       def create
-        @host_sign_up = Host.create(host_params)
+        params = host_params
+        params[:profileImage]= 'https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+        @host_sign_up = Host.create(params)
         if @host_sign_up.save 
           GigMailer.with(email: params[:email].downcase).new_user_email.deliver_later
           render :host_sign_up,:formats =>:json, status: :ok
@@ -75,7 +77,7 @@ class Api::V1::Host::RegistrationsController < Devise::RegistrationsController
       end
 
       def host_params
-        params.permit(:email, :name,  :password, :password_confirmation)
+        params.permit(:email, :name,  :password, :password_confirmation) 
       end
 end
 
