@@ -1,6 +1,7 @@
 
 json.data do
     json.host do
+        json.profile @host_sign_in.profileImage
         json.name @host_sign_in.name
         json.email @host_sign_in.email
     end
